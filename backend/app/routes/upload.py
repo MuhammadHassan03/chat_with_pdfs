@@ -8,14 +8,14 @@ router = APIRouter()
 
 @router.post("/")
 async def upload_pdf(file: UploadFile = File(...)):
-    # save file in docs/
+    # save file in tmp/
     # call PDF parser & embeddings
     
-    # Create docs directory if it doesn't exist
-    os.makedirs("app/docs", exist_ok=True)
+    # Create tmp directory if it doesn't exist
+    os.makedirs("app/tmp", exist_ok=True)
 
     # Save the uploaded file
-    file_path = f"app/docs/{file.filename}"
+    file_path = f"app/tmp/{file.filename}"
     with open(file_path, "wb") as f:
         f.write(await file.read())
     
