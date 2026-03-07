@@ -12,10 +12,11 @@ async def upload_pdf(file: UploadFile = File(...)):
     # call PDF parser & embeddings
     
     # Create tmp directory if it doesn't exist
-    os.makedirs("tmp", exist_ok=True)
+    UPLOAD_DIR = "/tmp"
+    os.makedirs(UPLOAD_DIR, exist_ok=True)
 
     # Save the uploaded file
-    file_path = f"tmp/{file.filename}"
+    file_path = f"{UPLOAD_DIR}/{file.filename}"
     with open(file_path, "wb") as f:
         f.write(await file.read())
     
