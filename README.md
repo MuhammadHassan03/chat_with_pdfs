@@ -2,6 +2,8 @@
 
 A high-performance **RAG (Retrieval-Augmented Generation)** backend built with **FastAPI** and **LangChain**. This tool allows users to upload PDF documents and have real-time conversations with their data using **Google Gemini 2.0 Flash** via **OpenRouter**.
 
+## 🔗 Live Demo
+🚀 **Check it out here:** [https://chat-with-pdfs-agmx.vercel.app/](https://chat-with-pdfs-agmx.vercel.app/)
 
 
 ## 🚀 Key Features
