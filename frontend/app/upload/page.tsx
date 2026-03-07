@@ -1,5 +1,5 @@
 'use client';
-import FileUpload from '@/components/FileUpload';
+import FileUpload from '../components/FileUpload';
 import { useRouter } from 'next/navigation';
 
 export default function UploadPage() {

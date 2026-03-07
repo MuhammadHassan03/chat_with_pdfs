@@ -1,9 +1,9 @@
 'use client'; // Add this at the top
 
-import Navbar from '@/components/Navbar';
+import Navbar from '../components/Navbar';
 import './globals.css';
 import { usePathname } from 'next/navigation';
-import Footer from '@/components/Footor';
+import Footer from '../components/Footor';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();

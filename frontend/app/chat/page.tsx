@@ -1,12 +1,12 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { askQuestion } from '@/lib/api';
-import { Message } from '@/types/chat';
+import { askQuestion } from '../lib/api';
+import { Message } from '../types/chat';
 
-import ChatBox from '@/components/ChatBox';
-import ChatMessage from '@/components/ChatMessage';
-import Loader from '@/components/Loader';
+import ChatBox from '../components/ChatBox';
+import ChatMessage from '/components/ChatMessage';
+import Loader from '../components/Loader';
 
 export default function ChatPage() {
   const [messages, setMessages] = useState<Message[]>([]);
