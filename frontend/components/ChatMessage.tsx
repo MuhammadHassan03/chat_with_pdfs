@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { Message } from '../types/chat';
+import { Message } from '@/types/chat';
 import { useEffect, useState } from 'react';
 
 export default function ChatMessage({ message }: { message: Message }) {
