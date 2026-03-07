@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { uploadPDF } from '@/lib/api';
 import { motion, AnimatePresence } from 'framer-motion';
 
+
 type UploadStatus = 'idle' | 'uploading' | 'processing' | 'success' | 'error';
 
 export default function FileUpload({ onUploadSuccess }: { onUploadSuccess: (name: string) => void }) {
