@@ -41,7 +41,9 @@ app = FastAPI(
 # Configure CORS (Cross-Origin Resource Sharing)
 # In production, restrict `allow_origins` to your specific frontend domains.
 CORS_ORIGINS = [
-    "https://chat-with-pdfs-agmx.vercel.app"
+    "https://chat-with-pdfs-agmx.vercel.app",
+    "https://chat-with-pdfs-agmx.vercel.app/", 
+    "http://localhost:3000",
 ]
 
 app.add_middleware(
