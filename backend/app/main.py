@@ -41,8 +41,9 @@ app = FastAPI(
 # Configure CORS (Cross-Origin Resource Sharing)
 # In production, restrict `allow_origins` to your specific frontend domains.
 CORS_ORIGINS = [
-    "http://localhost:5173",   # Vite frontend default port
-    "http://127.0.0.1:5173",
+    # "http://localhost:5173",   # Vite frontend default port
+    # "http://127.0.0.1:5173",
+    "*"
 ]
 
 app.add_middleware(

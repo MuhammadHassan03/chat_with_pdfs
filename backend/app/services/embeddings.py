@@ -26,7 +26,7 @@ def get_embeddings_model():
     # Configure chunk sizes or others as needed via keyword arguments.
     return GoogleGenerativeAIEmbeddings(
         model="models/gemini-embedding-001",
-        api_key=os.getenv("GOOGLE_API_KEY")
+        api_key=os.getenv("GOOGLE_API_KEY") 
     )
 
 def generate_embedding(text: str) -> list[float]:
