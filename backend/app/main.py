@@ -41,17 +41,15 @@ app = FastAPI(
 # Configure CORS (Cross-Origin Resource Sharing)
 # In production, restrict `allow_origins` to your specific frontend domains.
 CORS_ORIGINS = [
-    # "http://localhost:5173",   # Vite frontend default port
-    # "http://127.0.0.1:5173",
-    "*"
+    "https://chat-with-pdfs-agmx.vercel.app"
 ]
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=CORS_ORIGINS,
     allow_credentials=True,
-    allow_methods=["*"],  # Allows all methods (GET, POST, PUT, DELETE, etc.)
-    allow_headers=["*"],  # Allows all headers
+    allow_methods=["*"], 
+    allow_headers=["*"], 
 )
 
 # Middleware for adding custom headers and timing
